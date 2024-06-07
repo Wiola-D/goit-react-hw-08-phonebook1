@@ -9,15 +9,15 @@ export const ContactsList = () => {
   return (
     <div>
       {filteredContacts.length > 0 ? (
-        <ul className={css.inputs}>
+        <ul className={css.list}>
           {filteredContacts.map(contact => (
-            <li key={contact.id}>
+            <li className={css.listItem} key={contact.id}>
               <Contact contact={contact} />
             </li>
           ))}
         </ul>
       ) : (
-        <p>No contacts</p>
+        <p className={css.noContacts}>No contacts</p>
       )}
     </div>
   );

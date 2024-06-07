@@ -1,7 +1,8 @@
 .container {
   text-align: center;
-  padding: 30px;
-
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
   border-radius: 10px;
   background-color: rgba(159, 159, 159, 0.211);
   color: #5c0262;
