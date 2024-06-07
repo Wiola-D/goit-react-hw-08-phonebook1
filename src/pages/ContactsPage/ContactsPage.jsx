@@ -7,7 +7,7 @@ import { Filter } from '../../components/Filter/Filter';
 import { fetchContacts } from '../../redux/contacts/operations';
 import { useEffect } from 'react';
 import Loader from 'components/Loader/Loader';
-// import css from './ContacsPage.module.css';
+import css from './ContactsPage.module.css';
 
 const ContactsPage = () => {
   const dispatch = useDispatch();
@@ -19,14 +19,16 @@ const ContactsPage = () => {
 
   return (
     <HelmetProvider>
-      <div>
+      <div className={css.container}>
         <Helmet>
           <title>Your Contacts</title>
         </Helmet>
         <div>{isLoading && <Loader />}</div>
         <ContactForm />
-        <Filter />
-        <ContactsList />
+        <div className={css.contactsList}>
+          <Filter />
+          <ContactsList />
+        </div>
       </div>
     </HelmetProvider>
   );

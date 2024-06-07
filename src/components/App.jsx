@@ -1,12 +1,12 @@
-import { useEffect, lazy } from 'react';
+import { useAuth } from 'hooks';
+import { lazy, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
-import { Layout } from './Layout';
+import { refreshUser } from '../redux/auth/operations';
+import { Layout } from './Layout/Layout';
+import Loader from './Loader/Loader';
 import { PrivateRoute } from './PrivateRute';
 import { RestrictedRoute } from './RestrictedRoute';
-import { refreshUser } from '../redux/auth/operations';
-import { useAuth } from 'hooks';
-import Loader from './Loader/Loader';
 
 // import css from './App.module.css';
 

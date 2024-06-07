@@ -1,9 +1,9 @@
 import { Grid } from 'react-loader-spinner';
-// import css from '../styles/Loader.module.css';
+import css from './Loader.module.css';
 
 const Loader = () => {
   return (
-    <div>
+    <div className={css.container}>
       <Grid
         visible={true}
         height="80"

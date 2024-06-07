@@ -1,0 +1,14 @@
+.contactsList {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(159, 159, 159, 0.211);
+  color: #5c0262;
+  box-shadow: 0px 0px 25px -1px rgba(66, 68, 90, 1);
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
